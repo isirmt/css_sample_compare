@@ -18,6 +18,7 @@ body {
   left: 0;
   top: 0;
   display: block;
+  font-size: 1.3rem;
   background-color: #33ac97;
   padding: 13px;
   margin: 5px;
@@ -66,8 +67,14 @@ h3 {
 
 .main-contents {
   margin: 0 auto;
-  width: min(100%, 800px);
+  width: 767px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .main-contents {
+    width: 100%;
+  }
 }
 
 .notification {
@@ -110,13 +117,13 @@ h3 {
 .button-link {
   display: block;
   margin: 2rem auto;
-  width: min(min(100vw, 800px), 400px);
+  width: 400px;
   justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
   .button-link {
-    width: min(min(100vw, 100%), 400px)
+    width: 85%
   }
 }
 
@@ -124,7 +131,7 @@ h3 {
   display: block;
   margin: 2rem 0;
   width: 100%;
-  height: calc(min(min(100vw, 800px), 400px) / 5.0);
+  height: 5rem;
   background-color: #ddd;
   cursor: default;
   position: relative;
@@ -138,7 +145,7 @@ a {
 .ui-button.a {
   border-style: solid;
   border-color: rgb(40, 138, 105);
-  border-width: min(1vw, 2.5px);
+  border-width: 2.5px;
 }
 
 .ui-button.b {
@@ -156,11 +163,11 @@ a {
 }
 
 .ui-button.d {
-  border-radius: min(2vw, 10px);
-  -webkit-border-radius: min(2vw, 10px);
-  -moz-border-radius: min(2vw, 10px);
-  -ms-border-radius: min(2vw, 10px);
-  -o-border-radius: min(2vw, 10px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .ui-button.e {
@@ -181,16 +188,16 @@ a {
 }
 
 .ui-button.g {
-  box-shadow: min(0.2vw, 3px) min(0.5vw, 5px) min(0.2vw, 3px) #344f57;
+  box-shadow: 3px 5px 2px #2b4e48;
 }
 
 .ui-button.g:hover {
-  box-shadow: min(0.2vw, 3px) 0 min(0.2vw, 3px) #344f57;
-  transform: translateY(min(0.5vw, 5px));
-  -webkit-transform: translateY(min(0.5vw, 5px));
-  -moz-transform: translateY(min(0.5vw, 5px));
-  -ms-transform: translateY(min(0.5vw, 5px));
-  -o-transform: translateY(min(0.5vw, 5px));
+  box-shadow: 2px 0 1px #344f57;
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
 }
 
 .ui-button.h {
@@ -210,7 +217,7 @@ a {
   content: "CLICK →";
   font-weight: bold;
   position: absolute;
-  right: min(5vw, 30px);
+  right: 1.5rem;
 }
 
 .copy {
